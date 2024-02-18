@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Tutor. We are so glad to have you here at Beyond A+.</title>
+    <style>
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .hero h2 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #007bff;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background: #f7f7f7;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh; 
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        h2{
+            color: #000000
+        }
+        p {
+            color: #333;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box; 
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background: #f7f7f7;
+            margin: 0;
+        }
+
+        .image-container {
+            margin: 10px;
+            flex-shrink: 0;
+        }
+        .image-container img {
+            max-width: 400px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            margin-top: 110px; /
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BeyondA+</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Welcome, Tutor!</h2>
+    <p>We are extremely excited your here with us at BeyondA+. Fill out the information below to connect you with the right student for you.</p>
+
+    <form id="selectionForm">
+        <label for="university">Select your University:</label>
+        <select id="university">
+            <option value="umass">UMass Amherst</option>
+            <option value="alabama_a&m_university">Alabama A&M University</option>
+            <option value="alabama_state_university">Alabama State University</option>
+            <option value="amridge_university">Amridge University</option>
+            <option value="auburn_university">Auburn University</option>
+            <option value="auburn_university_at_montgomery">Auburn University at Montgomery</option>
+            <option value="birmingham_southern_college">Birmingham Southern College</option>
+            <option value="faulkner_university">Faulkner University</option>
+            <option value="heritage_christian_university">Heritage Christian University</option>
+            <option value="huntingdon_college">Huntingdon College</option>
+            <option value="jacksonville_state_university">Jacksonville State University</option>
+            <option value="judson_college">Judson College</option>
+            <option value="miles_college">Miles College</option>
+            <option value="oakwood_university">Oakwood University</option>
+            <option value="samford_university">Samford University</option>
+            <option value="selma_university">Selma University</option>
+            <option value="spring_hill_college">Spring Hill College</option>
+            <option value="stillman_college">Stillman College</option>
+            <option value="talladega_college">Talladega College</option>
+            <option value="troy_university">Troy University</option>
+            <option value="tuskegee_university">Tuskegee University</option>
+            <option value="university_of_alabama">University of Alabama</option>
+            <option value="university_of_alabama_at_birmingham">University of Alabama at Birmingham</option>
+            <option value="university_of_alabama_in_huntsville">University of Alabama in Huntsville</option>
+            <option value="university_of_mobile">University of Mobile</option>
+            <option value="university_of_montevallo">University of Montevallo</option>
+            <option value="university_of_north_alabama">University of North Alabama</option>
+            <option value="university_of_south_alabama">University of South Alabama</option>
+            <option value="university_of_west_alabama">University of West Alabama</option>
+
+            <option value="alaska_bible_college">Alaska Bible College</option>
+            <option value="alaska_pacific_university">Alaska Pacific University</option>
+            <option value="university_of_alaska_anchorage">University of Alaska Anchorage</option>
+            <option value="university_of_alaska_fairbanks">University of Alaska Fairbanks</option>
+            <option value="university_of_alaska_southeast">University of Alaska Southeast</option>
+            <option value="arizona_christian_university">Arizona Christian University</option>
+            <option value="arizona_state_university">Arizona State University</option>
+            <option value="embry-riddle_aeronautical_university">Embry-Riddle Aeronautical University</option>
+            <option value="grand_canyon_university">Grand Canyon University</option>
+            <option value="international_baptist_college">International Baptist College</option>
+            <option value="northern_arizona_university">Northern Arizona University</option>
+            <option value="prescott_college">Prescott College</option>
+            <option value="southwest_university_of_visual_arts">Southwest University of Visual Arts</option>
+            <option value="university_of_arizona">University of Arizona</option>
+            <option value="arkansas_baptist_college">Arkansas Baptist College</option>
+            <option value="arkansas_state_university">Arkansas State University</option>
+            <option value="arkansas_tech_university">Arkansas Tech University</option>
+            <option value="central_baptist_college">Central Baptist College</option>
+            <option value="crowley’s_ridge_college">Crowley’s Ridge College</option>
+            <option value="ecclesia_college">Ecclesia College</option>
+            <option value="harding_university">Harding University</option>
+            <option value="henderson_state_university">Henderson State University</option>
+            <option value="hendrix_college">Hendrix College</option>
+            <option value="john_brown_university">John Brown University</option>
+            <option value="lyon_college">Lyon College</option>
+            <option value="ouachita_baptist_university">Ouachita Baptist University</option>
+            <option value="philander_smith_college">Philander Smith College</option>
+            <option value="southern_arkansas_university">Southern Arkansas University</option>
+            <option value="university_of_arkansas">University of Arkansas</option>
+            <option value="university_of_arkansas_at_little_rock">University of Arkansas at Little Rock</option>
+            <option value="university_of_arkansas_at_pine_bluff">University of Arkansas at Pine Bluff</option>
+            <option value="university_of_arkansas_fort_smith">University of Arkansas Fort Smith</option>
+            <option value="university_of_central_arkansas">University of Central Arkansas</option>
+            <option value="university_of_the_ozarks">University of the Ozarks</option>
+            <option value="williams_baptist_university">Williams Baptist University</option>
+            <option value="american_jewish_university">American Jewish University</option>
+            <option value="azusa_pacific_university">Azusa Pacific University</option>
+            <option value="biola_university">Biola University</option>
+            <option value="brandman_university">Brandman University</option>
+            <option value="california_baptist_university">California Baptist University</option>
+            <option value="california_college_of_the_arts">California College of the Arts</option>
+            <option value="california_institute_of_the_arts">California Institute of the Arts</option>
+            <option value="california_institute_of_technology">California Institute of Technology</option>
+            <option value="california_lutheran_university">California Lutheran University</option>
+            <option value="california_miramar_university">California Miramar University</option>
+            <option value="california_polytechnic_state_university">California Polytechnic State University</option>
+            <option value="california_polytechnic_state_university_pomona">California Polytechnic State University, Pomona</option>
+            <option value="california_state_university_maritime_academy">California State University Maritime Academy</option>
+            <option value="california_state_university_bakersfield">California State University, Bakersfield</option>
+            <option value="california_state_university_channel_islands">California State University, Channel Islands</option>
+            <option value="california_state_university_chico">California State University, Chico</option>
+            <option value="california_state_university_dominguez_hills">California State University, Dominguez Hills</option>
+            <option value="california_state_university_east_bay">California State University, East Bay</option>
+            <option value="california_state_university_fresno">California State University, Fresno</option>
+            <option value="california_state_university_fullerton">California State University, Fullerton</option>
+            <option value="california_state_university_long_beach">California State University, Long Beach</option>
+            <option value="california_state_university_los_angeles">California State University, Los Angeles</option>
+            <option value="california_state_university_monterey_bay">California State University, Monterey Bay</option>
+            <option value="california_state_university_northridge">California State University, Northridge</option>
+            <option value="california_state_university_sacramento">California State University, Sacramento</option>
+            <option value="california_state_university_san_bernardino">California State University, San Bernardino</option>
+            <option value="california_state_university_san_marcos">California State University, San Marcos</option>
+            <option value="california_state_university_stanislaus">California State University, Stanislaus</option>
+            <option value="chapman_university">Chapman University</option>
+            <option value="claremont_mckenna_college">Claremont McKenna College</option>
+            <option value="cogswell_polytechnical_college">Cogswell Polytechnical College</option>
+            <option value="concordia_university_irvine">Concordia University Irvine</option>
+            <option value="dominican_university_of_california">Dominican University of California</option>
+            <option value="fresno_pacific_university">Fresno Pacific University</option>
+            <option value="harvey_mudd_college">Harvey Mudd College</option>
+            <option value="holy_names_university">Holy Names University</option>
+            <option value="hope_international_university">Hope International University</option>
+            <option value="humboldt_state_university">Humboldt State University</option>
+            <option value="john_paul_the_great_catholic_university">John Paul the Great Catholic University</option>
+            <option value="la_sierra_university">La Sierra University</option>
+            <option value="laguna_college_of_art_and_design">Laguna College of Art and Design</option>
+            <option value="life_pacific_college">Life Pacific College</option>
+            <option value="loma_linda_university">Loma Linda University</option>
+            <option value="loyola_marymount_university">Loyola Marymount University</option>
+            <option value="menlo_college">Menlo College</option>
+            <option value="mills_college">Mills College</option>
+            <option value="mount_st_marys_university">Mount St. Mary’s University</option>
+            <option value="national_university">National University</option>
+            <option value="newschool_of_architecture_and_design">NewSchool of Architecture and Design</option>
+            <option value="notre_dame_de_namur_university">Notre Dame de Namur University</option>
+            <option value="occidental_college">Occidental College</option>
+            <option value="pacific_oaks_college">Pacific Oaks College</option>
+            <option value="pacific_union_college">Pacific Union College</option>
+            <option value="palo_alto_university">Palo Alto University</option>
+            <option value="pepperdine_university">Pepperdine University</option>
+            <option value="pitzer_college">Pitzer College</option>
+            <option value="point_loma_nazarene_university">Point Loma Nazarene University</option>
+            <option value="pomona_college">Pomona College</option>
+            <option value="providence_christian_college">Providence Christian College</option>
+            <option value="saint_marys_college_of_california">Saint Mary’s College of California</option>
+            <option value="samuel_merritt_university">Samuel Merritt University</option>
+            <option value="san_diego_christian_college">San Diego Christian College</option>
+            <option value="san_diego_state_university">San Diego State University</option>
+            <option value="san_francisco_state_university">San Francisco State University</option>
+            <option value="san_jose_state_university">San Jose State University</option>
+            <option value="santa_clara_university">Santa Clara University</option>
+            <option value="scripps_college">Scripps College</option>
+            <option value="simpson_university">Simpson University</option>
+            <option value="soka_university_of_america">Soka University of America</option>
+            <option value="sonoma_state_university">Sonoma State University</option>
+            <option value="southern_california_institute_of_architecture">Southern California Institute of Architecture</option>
+            <option value="stanford_university">Stanford University</option>
+            <option value="university_of_california_berkeley">University of California, Berkeley</option>
+            <option value="university_of_california_davis">University of California, Davis</option>
+            <option value="university_of_california_irvine">University of California, Irvine</option>
+            <option value="university_of_california_los_angeles">University of California, Los Angeles</option>
+            <option value="university_of_california_merced">University of California, Merced</option>
+            <option value="university_of_california_riverside">University of California, Riverside</option>
+            <option value="university_of_california_san_diego">University of California, San Diego</option>
+            <option value="university_of_california_santa_barbara">University of California, Santa Barbara</option>
+            <option value="university_of_california_santa_cruz">University of California, Santa Cruz</option>
+            <option value="university_of_la_verne">University of La Verne</option>
+            <option value="university_of_the_pacific">University of the Pacific</option>
+            <option value="university_of_redlands">University of Redlands</option>
+            <option value="university_of_san_diego">University of San Diego</option>
+            <option value="university_of_san_francisco">University of San Francisco</option>
+            <option value="university_of_southern_california">University of Southern California</option>
+            <option value="university_of_the_west">University of the West</option>
+            <option value="vanguard_university">Vanguard University</option>
+            <option value="westmont_college">Westmont College</option>
+            <option value="whittier_college">Whittier College</option>
+            <option value="william_jessup_university">William Jessup University</option>
+            <option value="woodbury_university">Woodbury University</option>
+            <option value="adams_state_university">Adams State University</option>
+            <option value="colorado_christian_university">Colorado Christian University</option>
+            <option value="colorado_college">Colorado College</option>
+            <option value="colorado_mesa_university">Colorado Mesa University</option>
+            <option value="colorado_school_of_mines">Colorado School of Mines</option>
+            <option value="colorado_state_university">Colorado State University</option>
+            <option value="colorado_state_university_pueblo">Colorado State University – Pueblo</option>
+            <option value="fort_lewis_college">Fort Lewis College</option>
+            <option value="metropolitan_state_university">Metropolitan State University</option>
+            <option value="nazarene_bible_college">Nazarene Bible College</option>
+            <option value="regis_university">Regis University</option>
+            <option value="rocky_mountain_college_of_art_+_design">Rocky Mountain College of Art + Design</option>
+            <option value="united_states_air_force_academy">United States Air Force Academy</option>
+            <option value="university_of_colorado">University of Colorado</option>
+            <option value="university_of_colorado_colorado_springs">University of Colorado – Colorado Springs</option>
+            <option value="university_of_denver">University of Denver</option>
+            <option value="university_of_northern_colorado">University of Northern Colorado</option>
+            <option value="western_state_colorado_university">Western State Colorado University</option>
+            <option value="albertus_magnus_college">Albertus Magnus College</option>
+            <option value="central_connecticut_state_university">Central Connecticut State University</option>
+            <option value="charter_oak_state_college">Charter Oak State College</option>
+            <option value="connecticut_college">Connecticut College</option>
+            <option value="eastern_connecticut_state_university">Eastern Connecticut State University</option>
+            <option value="fairfield_university">Fairfield University</option>
+            <option value="mitchell_college">Mitchell College</option>
+            <option value="post_university">Post University</option>
+            <option value="quinnipiac_university">Quinnipiac University</option>
+            <option value="sacred_heart_university">Sacred Heart University</option>
+            <option value="southern_connecticut_state_university">Southern Connecticut State University</option>
+            <option value="trinity_college">Trinity College</option>
+            <option value="university_of_connecticut">University of Connecticut</option>
+            <option value="university_of_hartford">University of Hartford</option>
+            <option value="university_of_new_haven">University of New Haven</option>
+            <option value="university_of_saint_joseph">University of Saint Joseph</option>
+            <option value="wesleyan_university">Wesleyan University</option>
+            <option value="western_connecticut_state_university">Western Connecticut State University</option>
+            <option value="yale_university">Yale University</option>
+            <option value="delaware_state_university">Delaware State University</option>
+            <option value="university_of_delaware">University of Delaware</option>
+            <option value="wesley_college">Wesley College</option>
+            <option value="wilberforce_university">Wilberforce University</option>
+            <option value="wilberforce_university">Wilberforce University</option>
+            <option value="wilmington_university">Wilmington University</option>
+            <option value="american_university">American University</option>
+            <option value="catholic_university_of_america">Catholic University of America</option>
+            <option value="gallaudet_university">Gallaudet University</option>
+            <option value="george_washington_university">George Washington University</option>
+            <option value="georgetown_university">Georgetown University</option>
+            <option value="howard_university">Howard University</option>
+            <option value="marymount_university">Marymount University</option>
+            <option value="trinity_washington_university">Trinity Washington University</option>
+            <option value="university_of_the_district_of_columbia">University of the District of Columbia</option>
+            <option value="argosy_university">Argosy University</option>
+            <option value="brigham_young_university_hawaii">Brigham Young University–Hawaii</option>
+            <option value="brigham_young_university_idaho">Brigham Young University–Idaho</option>
+            <option value="brigham_young_university">Brigham Young University</option>
+            <option value="clearwater_christian_college">Clearwater Christian College</option>
+            <option value="eckerd_college">Eckerd College</option>
+            <option value="edinboro_university_of_pennsylvania">Edinboro University of Pennsylvania</option>
+            <option value="embry-riddle_aeronautical_university">Embry-Riddle Aeronautical University</option>
+            <option value="florida_agricultural_and_mechanical_university">Florida Agricultural and Mechanical University</option>
+            <option value="florida_atlantic_university">Florida Atlantic University</option>
+            <option value="florida_gulf_coast_university">Florida Gulf Coast University</option>
+            <option value="florida_institute_of_technology">Florida Institute of Technology</option>
+            <option value="florida_international_university">Florida International University</option>
+            <option value="florida_southern_college">Florida Southern College</option>
+            <option value="florida_state_university">Florida State University</option>
+            <option value="full_sail_university">Full Sail University</option>
+            <option value="gulf_coast_state_college">Gulf Coast State College</option>
+            <option value="hobe_sound_bible_college">Hobe Sound Bible College</option>
+            <option value="hodges_university">Hodges University</option>
+            <option value="indian_river_state_college">Indian River State College</option>
+            <option value="international_academy_of_design_and_technology">International Academy of Design & Technology</option>
+            <option value="international_aesthetic_and_laser_association">International Aesthetic and Laser Association</option>
+            <option value="jacksonville_university">Jacksonville University</option>
+            <option value="johnson_university_florida">Johnson University Florida</option>
+            <option value="keiser_university">Keiser University</option>
+            <option value="luther_rice_college_&_seminary">Luther Rice College & Seminary</option>
+            <option value="lynn_university">Lynn University</option>
+            <option value="miami_international_university_of_art_&_design">Miami International University of Art & Design</option>
+            <option value="miami_dade_college">Miami Dade College</option>
+            <option value="northwood_university">Northwood University</option>
+            <option value="nova_southeastern_university">Nova Southeastern University</option>
+            <option value="palm_beach_atlantic_university">Palm Beach Atlantic University</option>
+            <option value="ringling_college_of_art_and_design">Ringling College of Art and Design</option>
+            <option value="rollins_college">Rollins College</option>
+            <option value="saint_leo_university">Saint Leo University</option>
+            <option value="saint_thomas_university">Saint Thomas University</option>
+            <option value="santa_fe_college">Santa Fe College</option>
+            <option value="sarasota_county_technical_institute">Sarasota County Technical Institute</option>
+            <option value="seminole_state_college_of_florida">Seminole State College of Florida</option>
+            <option value="south_florida_bible_college_&_theological_seminary">South Florida Bible College & Theological Seminary</option>
+            <option value="south_florida_state_college">South Florida State College</option>
+            <option value="southeastern_university">Southeastern University</option>
+            <option value="american_international_college">American International College</option>
+            <option value="amherst_college">Amherst College</option>
+            <option value="anna_maria_college">Anna Maria College</option>
+            <option value="assumption_college">Assumption College</option>
+            <option value="bay_path_university">Bay Path University</option>
+            <option value="becker_college">Becker College</option>
+            <option value="bentley_university">Bentley University</option>
+            <option value="boston_college">Boston College</option>
+            <option value="boston_university">Boston University</option>
+            <option value="brandeis_university">Brandeis University</option>
+            <option value="bridgewater_state_university">Bridgewater State University</option>
+            <option value="cambridge_college">Cambridge College</option>
+            <option value="clark_university">Clark University</option>
+            <option value="college_of_the_holy_cross">College of the Holy Cross</option>
+            <option value="curry_college">Curry College</option>
+            <option value="eastern_nazarene_college">Eastern Nazarene College</option>
+            <option value="emerson_college">Emerson College</option>
+            <option value="emmanuel_college">Emmanuel College</option>
+            <option value="endicott_college">Endicott College</option>
+            <option value="fisher_college">Fisher College</option>
+            <option value="fitchburg_state_university">Fitchburg State University</option>
+            <option value="framingham_state_university">Framingham State University</option>
+            <option value="gordon_college">Gordon College</option>
+            <option value="hampshire_college">Hampshire College</option>
+            <option value="harvard_university">Harvard University</option>
+            <option value="lasell_college">Lasell College</option>
+            <option value="lesley_university">Lesley University</option>
+            <option value="massachusetts_college_of_liberal_arts">Massachusetts College of Liberal Arts</option>
+            <option value="massachusetts_institute_of_technology">Massachusetts Institute of Technology</option>
+            <option value="massachusetts_maritime_academy">Massachusetts Maritime Academy</option>
+            <option value="merrimack_college">Merrimack College</option>
+            <option value="mgh_institute_of_health_professions">MGH Institute of Health Professions</option>
+            <option value="mount_holyoke_college">Mount Holyoke College</option>
+            <option value="newbury_college">Newbury College</option>
+            <option value="northeastern_university">Northeastern University</option>
+            <option value="pine_manor_college">Pine Manor College</option>
+            <option value="regis_college">Regis College</option>
+            <option value="salem_state_university">Salem State University</option>
+            <option value="simmons_university">Simmons University</option>
+            <option value="smith_college">Smith College</option>
+            <option value="springfield_college">Springfield College</option>
+            <option value="stonehill_college">Stonehill College</option>
+            <option value="suffolk_university">Suffolk University</option>
+            <option value="tufts_university">Tufts University</option>
+            <option value="university_of_massachusetts_boston">University of Massachusetts Boston</option>
+            <option value="university_of_massachusetts_dartmouth">University of Massachusetts Dartmouth</option>
+            <option value="university_of_massachusetts_lowell">University of Massachusetts Lowell</option>
+            <option value="wellesley_college">Wellesley College</option>
+            <option value="western_new_england_university">Western New England University</option>
+            <option value="westfield_state_university">Westfield State University</option>
+            <option value="wheaton_college">Wheaton College</option>
+            <option value="williams_college">Williams College</option>
+            <option value="worcester_polytechnic_institute">Worcester Polytechnic Institute</option>
+            <option value="worcester_state_university">Worcester State University</option>
+            
+        </select><br><br>
+
+<label for="department">Select your Department:</label>
+<select id="department">
+    <option value="cs" selected>Computer Science</option>
+    <option value="accounting">Accounting</option>
+    <option value="african_american_studies">African-American Studies</option>
+    <option value="agricultural_economics">Agricultural Economics</option>
+    <option value="agricultural_engineering">Agricultural Engineering</option>
+    <option value="agricultural_education">Agricultural Education</option>
+    <option value="agricultural_mechanization">Agricultural Mechanization</option>
+    <option value="agricultural_production">Agricultural Production</option>
+    <option value="agricultural_science">Agricultural Science</option>
+    <option value="agricultural_technology">Agricultural Technology</option>
+    <option value="agribusiness">Agribusiness</option>
+    <option value="agronomy">Agronomy</option>
+    <option value="american_history">American History</option>
+    <option value="american_literature">American Literature</option>
+    <option value="american_politics">American Politics</option>
+    <option value="american_studies">American Studies</option>
+    <option value="animal_science">Animal Science</option>
+    <option value="anthropology">Anthropology</option>
+    <option value="applied_mathematics">Applied Mathematics</option>
+    <option value="aquaculture">Aquaculture</option>
+    <option value="arabic">Arabic</option>
+    <option value="architecture">Architecture</option>
+    <option value="art">Art</option>
+    <option value="art_education">Art Education</option>
+    <option value="art_history">Art History</option>
+    <option value="artificial_intelligence">Artificial Intelligence</option>
+    <option value="asian_american_studies">Asian American Studies</option>
+    <option value="astronomy">Astronomy</option>
+    <option value="athletic_training">Athletic Training</option>
+    <option value="atmospheric_science">Atmospheric Science</option>
+    <option value="auditory_processing">Auditory Processing</option>
+    <option value="autism_spectrum_disorders">Autism Spectrum Disorders</option>
+    <option value="automation">Automation</option>
+    <option value="aviation">Aviation</option>
+    <option value="behavioral_sciences">Behavioral Sciences</option>
+    <option value="biochemistry">Biochemistry</option>
+    <option value="biodiversity">Biodiversity</option>
+    <option value="bioengineering">Bioengineering</option>
+    <option value="bioethics">Bioethics</option>
+    <option value="bioinformatics">Bioinformatics</option>
+    <option value="biological_anthropology">Biological Anthropology</option>
+    <option value="biological_engineering">Biological Engineering</option>
+    <option value="biological_sciences">Biological Sciences</option>
+    <option value="biomaterials">Biomaterials</option>
+    <option value="biomechanics">Biomechanics</option>
+    <option value="biomedical_engineering">Biomedical Engineering</option>
+    <option value="biomedical_ethics">Biomedical Ethics</option>
+    <option value="biomedical_sciences">Biomedical Sciences</option>
+    <option value="biophysics">Biophysics</option>
+    <option value="biostatistics">Biostatistics</option>
+    <option value="biotechnology">Biotechnology</option>
+    <option value="botany">Botany</option>
+    <option value="business_administration">Business Administration</option>
+    <option value="business_communication">Business Communication</option>
+    <option value="business_economics">Business Economics</option>
+    <option value="business_ethics">Business Ethics</option>
+    <option value="business_law">Business Law</option>
+    <option value="business_management">Business Management</option>
+    <option value="business_marketing">Business Marketing</option>
+    <option value="business_mathematics">Business Mathematics</option>
+    <option value="business_psychology">Business Psychology</option>
+    <option value="business_statistics">Business Statistics</option>
+    <option value="cell_biology">Cell Biology</option>
+    <option value="ceramics">Ceramics</option>
+    <option value="chemical_engineering">Chemical Engineering</option>
+    <option value="chemical_physics">Chemical Physics</option>
+    <option value="chemistry">Chemistry</option>
+    <option value="child_development">Child Development</option>
+    <option value="child_psychology">Child Psychology</option>
+    <option value="chinese_language">Chinese Language</option>
+    <option value="civil_engineering">Civil Engineering</option>
+    <option value="classical_archaeology">Classical Archaeology</option>
+    <option value="classical_art">Classical Art</option>
+    <option value="classical_studies">Classical Studies</option>
+    <option value="cognitive_psychology">Cognitive Psychology</option>
+    <option value="cognitive_science">Cognitive Science</option>
+    <option value="communication_disorders">Communication Disorders</option>
+    <option value="communication_studies">Communication Studies</option>
+    <option value="comparative_literature">Comparative Literature</option>
+    <option value="computational_biology">Computational Biology</option>
+    <option value="computational_mathematics">Computational Mathematics</option>
+    Certainly, here are the remaining departments at UMass Amherst:
+
+```html
+<option value="computer_engineering">Computer Engineering</option>
+<option value="computer_graphics">Computer Graphics</option>
+<option value="computer_information_systems">Computer Information Systems</option>
+<option value="computer_networking">Computer Networking</option>
+<option value="computer_programming">Computer Programming</option>
+<option value="computer_science">Computer Science</option>
+<option value="computer_security">Computer Security</option>
+<option value="computer_systems">Computer Systems</option>
+<option value="computer_vision">Computer Vision</option>
+<option value="construction_management">Construction Management</option>
+<option value="creative_writing">Creative Writing</option>
+<option value="criminal_justice">Criminal Justice</option>
+<option value="culinary_arts">Culinary Arts</option>
+<option value="cultural_anthropology">Cultural Anthropology</option>
+<option value="dance">Dance</option>
+<option value="data_analytics">Data Analytics</option>
+<option value="data_science">Data Science</option>
+<option value="decision_sciences">Decision Sciences</option>
+<option value="dentistry">Dentistry</option>
+<option value="design">Design</option>
+<option value="developmental_psychology">Developmental Psychology</option>
+<option value="digital_art">Digital Art</option>
+<option value="digital_communication">Digital Communication</option>
+<option value="digital_design">Digital Design</option>
+<option value="digital_media">Digital Media</option>
+<option value="disability_studies">Disability Studies</option>
+<option value="early_childhood_education">Early Childhood Education</option>
+<option value="earth_science">Earth Science</option>
+<option value="east_asian_studies">East Asian Studies</option>
+<option value="economics">Economics</option>
+<option value="education">Education</option>
+<option value="educational_administration">Educational Administration</option>
+<option value="educational_psychology">Educational Psychology</option>
+<option value="educational_technology">Educational Technology</option>
+<option value="electrical_engineering">Electrical Engineering</option>
+<option value="electronic_engineering">Electronic Engineering</option>
+<option value="elementary_education">Elementary Education</option>
+<option value="emergency_management">Emergency Management</option>
+<option value="english">English</option>
+<option value="environmental_biology">Environmental Biology</option>
+<option value="environmental_engineering">Environmental Engineering</option>
+<option value="environmental_health">Environmental Health</option>
+<option value="environmental_policy">Environmental Policy</option>
+<option value="environmental_science">Environmental Science</option>
+<option value="epidemiology">Epidemiology</option>
+<option value="ethics">Ethics</option>
+<option value="ethnic_studies">Ethnic Studies</option>
+<option value="european_history">European History</option>
+<option value="experimental_psychology">Experimental Psychology</option>
+<option value="fashion_design">Fashion Design</option>
+<option value="film_production">Film Production</option>
+<option value="finance">Finance</option>
+<option value="fine_arts">Fine Arts</option>
+<option value="fisheries">Fisheries</option>
+<option value="food_science">Food Science</option>
+<option value="forensic_science">Forensic Science</option>
+<option value="forest_management">Forest Management</option>
+<option value="french_language">French Language</option>
+<option value="game_design">Game Design</option>
+<option value="gender_studies">Gender Studies</option>
+<option value="general_engineering">General Engineering</option>
+<option value="genetics">Genetics</option>
+<option value="geography">Geography</option>
+<option value="geology">Geology</option>
+<option value="german_language">German Language</option>
+<option value="graphic_design">Graphic Design</option>
+<option value="greek">Greek</option>
+<option value="health_administration">Health Administration</option>
+<option value="health_communication">Health Communication</option>
+<option value="health_education">Health Education</option>
+<option value="health_policy">Health Policy</option>
+<option value="health_science">Health Science</option>
+<option value="higher_education">Higher Education</option>
+<option value="history">History</option>
+<option value="holistic_health">Holistic Health</option>
+<option value="horticulture">Horticulture</option>
+<option value="hospitality_management">Hospitality Management</option>
+<option value="human_biology">Human Biology</option>
+<option value="human_development">Human Development</option>
+<option value="human_resource_management">Human Resource Management</option>
+<option value="human_services">Human Services</option>
+<option value="humanities">Humanities</option>
+<option value="industrial_design">Industrial Design</option>
+<option value="industrial_engineering">Industrial Engineering</option>
+<option value="information_management">Information Management</option>
+<option value="information_systems">Information Systems</option>
+<option value="information_technology">Information Technology</option>
+<option value="instructional_design">Instructional Design</option>
+<option value="insurance">Insurance</option>
+<option value="interdisciplinary_studies">Interdisciplinary Studies</option>
+<option value="interior_design">Interior Design</option>
+<option value="international_business">International Business</option>
+<option value="international_relations">International Relations</option>
+<option value="internet_technologies">Internet Technologies</option>
+<option value="italian_language">Italian Language</option>
+<option value="japanese_language">Japanese Language</option>
+<option value="journalism">Journalism</option>
+<option value="kinesiology">Kinesiology</option>
+<option value="landscape_architecture">Landscape Architecture</option>
+<option value="latin">Latin</option>
+<option value="law">Law</option>
+<option value="leadership_studies">Leadership Studies</option>
+<option value="library_science">Library Science</option>
+<option value="linguistics">Linguistics</option>
+<option value="literature">Literature</option>
+<option value="management">Management</option>
+<option value="manufacturing_engineering">Manufacturing Engineering</option>
+<option value="marine_biology">Marine Biology</option>
+<option value="marketing">Marketing</option>
+<option value="materials_science">Materials Science</option>
+<option value="mathematics">Mathematics</option>
+<option value="mechanical_engineering">Mechanical Engineering</option>
+<option value="media_studies">Media Studies</option>
+<option value="medical_assisting">Medical Assisting</option>
+<option value="medical_imaging">Medical Imaging</option>
+<option value="medical_technology">Medical Technology</option>
+<option value="medicine">Medicine</option>
+<option value="medieval_studies">Medieval Studies</option>
+<option value="mental_health">Mental Health</option>
+<option value="meteorology">Meteorology</option>
+<option value="microbiology">Microbiology</option>
+<option value="military_science">Military Science</option>
+<option value="mineralogy">Mineralogy</option>
+<option value="modern_languages">Modern Languages</option>
+<option value="music">Music</option>
+<option value="music_education">Music Education</option>
+<option value="music_performance">Music Performance</option>
+<option value="music_theory">Music Theory</option>
+<option value="music_therapy">Music Therapy</option>
+<option value="nanotechnology">Nanotechnology</option>
+<option value="natural_resource_management">Natural Resource Management</option>
+<option value="neuroscience">Neuroscience</option>
+<option value="nuclear_engineering">Nuclear Engineering</option>
+<option value="nursing">Nursing</option>
+<option value="nutrition">Nutrition</option>
+<option value="occupational_therapy">Occupational Therapy</option>
+<option value="oceanography">Oceanography</option>
+<option value="optometry">Optometry</option>
+<option value="organizational_leadership">Organizational Leadership</option>
+<option value="paleontology">Paleontology</option>
+<option value="paralegal_studies">Paralegal Studies</option>
+<option value="peace_studies">Peace Studies</option>
+<option value="pediatric_nursing">Pediatric Nursing</option>
+<option value="performing_arts">Performing Arts</option>
+<option value="personal_training">Personal Training</option>
+<option value="petroleum_engineering">Petroleum Engineering</option>
+<option value="pharmaceutical_sciences">Pharmaceutical Sciences</option>
+<option value="pharmacology">Pharmacology</option>
+<option value="pharmacy">Pharmacy</option>
+<option value="philosophy">Philosophy</option>
+<option value="photography">Photography</option>
+<option value="physical_education">Physical Education</option>
+<option value="physical_therapy">Physical Therapy</option>
+<option value="physics">Physics</option>
+<option value="physiology">Physiology</option>
+<option value="plant_biology">Plant Biology</option>
+<option value="political_science">Political Science</option>
+<option value="pre-law">Pre-Law</option>
+<option value="pre-medicine">Pre-Medicine</option>
+<option value="pre-nursing">Pre-Nursing</option>
+<option value="pre-veterinary_medicine">Pre-Veterinary Medicine</option>
+<option value="psychiatry">Psychiatry</option>
+<option value="psychology">Psychology</option>
+<option value="public_administration">Public Administration</option>
+<option value="public_health">Public Health</option>
+<option value="public_policy">Public Policy</option>
+<option value="radiation_therapy">Radiation Therapy</option>
+<option value="radiography">Radiography</option>
+<option value="radiology">Radiology</option>
+<option value="real_estate">Real Estate</option>
+<option value="religious_studies">Religious Studies</option>
+<option value="respiratory_therapy">Respiratory Therapy</option>
+<option value="rhetoric">Rhetoric</option>
+<option value="robotics">Robotics</option>
+<option value="sociology">Sociology</option>
+<option value="software_engineering">Software Engineering</option>
+<option value="spanish_language">Spanish Language</option>
+<option value="special_education">Special Education</option>
+<option value="speech_language_pathology">Speech-Language Pathology</option>
+<option value="sports_management">Sports Management</option>
+<option value="sports_medicine">Sports Medicine</option>
+<option value="statistics">Statistics</option>
+<option value="strategic_management">Strategic Management</option>
+<option value="sustainability">Sustainability</option>
+<option value="sustainable_development">Sustainable Development</option>
+<option value="teaching">Teaching</option>
+<option value="technical_writing">Technical Writing</option>
+<option value="telecommunications">Telecommunications</option>
+<option value="theater">Theater</option>
+<option value="theology">Theology</option>
+<option value="toxicology">Toxicology</option>
+<option value="urban_planning">Urban Planning</option>
+<option value="veterinary_medicine">Veterinary Medicine</option>
+<option value="virology">Virology</option>
+<option value="visual_arts">Visual Arts</option>
+<option value="web_development">Web Development</option>
+<option value="wildlife_biology">Wildlife Biology</option>
+<option value="women's_studies">Women's Studies</option>
+<option value="writing">Writing</option>
+<option value="zoology">Zoology</option>
+</select><br><br>
+
+        </select><br><br>
+<label for="class">Select your Class:</label>
+<select id="class">
+    <optgroup label="100-Level Courses">
+    <option value="cmpsci100">CMPSCI 100 - Intensive Introduction to Computer Science</option>
+    <option value="cmpsci101">CMPSCI 101 - Computing for Everyone</option>
+    <option value="cmpsci102">CMPSCI 102 - Intensive Introduction to Computing for Non-Majors</option>
+    <option value="cmpsci103">CMPSCI 103 - Introduction to Computers and Their Applications</option>
+    <option value="cmpsci105">CMPSCI 105 - Introduction to Computer Science</option>
+    <option value="cmpsci106">CMPSCI 106 - Introduction to Computing Using MATLAB</option>
+    <option value="cmpsci119">CMPSCI 119 - Introduction to Programming</option>
+    <option value="cmpsci121">CMPSCI 121 - Introduction to Problem Solving with Computers</option>
+    <option value="cmpsci121H">CMPSCI 121H - Honors Introduction to Problem Solving with Computers</option>
+    <option value="cmpsci145">CMPSCI 145 - Representing, Storing, and Retrieving Information</option>
+    <option value="cmpsci186">CMPSCI 186 - Introduction to Computer Programming</option>
+    <option value="cmpsci187">CMPSCI 187 - Programming with Data</option>
+    <option value="cmpsci197B">CMPSCI 197B - Explorations in Bioinformatics</option>
+    <option value="cmpsci197C">CMPSCI 197C - Explorations in Computer Science & Informatics: Algorithms, Data, & Programming</option>
+    <option value="cmpsci197CC">CMPSCI 197CC - Explorations in Creative Computing</option>
+    <option value="cmpsci197D">CMPSCI 197D - Explorations in Computer Science & Informatics: Data Science</option>
+    <option value="cmpsci197DS">CMPSCI 197DS - Explorations in Data Science</option>
+    <option value="cmpsci197I">CMPSCI 197I - Explorations in Computing for Interactive Digital Media</option>
+    <option value="cmpsci197N">CMPSCI 197N - Explorations in Computing for Natural Sciences</option>
+    <option value="cmpsci197R">CMPSCI 197R - Practicum - R for Data Science</option>
+    <option value="cmpsci197Y">CMPSCI 197Y - Special Topics in Computer Science & Informatics: Data Science for All</option>
+    <option value="cmpsci198C">CMPSCI 198C - Practicum - Introduction to the C Programming Language</option>
+    <optgroup label="200-Level Courses">
+    <option value="cmpsci201">CMPSCI 201 - Architecture and Assembly Language</option>
+    <option value="cmpsci202">CMPSCI 202 - Programming for Engineers</option>
+    <option value="cmpsci220">CMPSCI 220 - Programming Methodology</option>
+    <option value="cmpsci230">CMPSCI 230 - Computer Systems Principles</option>
+    <option value="cmpsci240">CMPSCI 240 - Reasoning Under Uncertainty</option>
+    <option value="cmpsci250">CMPSCI 250 - Introduction to Computation</option>
+    <option value="cics256">CICS 256 - Make: A Hands-on Introduction to Physical Computing</option>
+    <option value="cmpsci287">CMPSCI 287 - Programming Languages</option>
+    <option value="cmpsci290A">CMPSCI 290A - Seminar - Computer Science and Informatics Colloquium</option>
+    <optgroup label="300 Level Courses"></optgroup>
+    <option value="cmpsci305">CMPSCI 305 - Social Issues in Computing</option>
+    <option value="cmpsci311">CMPSCI 311 - Introduction to Algorithms</option>
+    <option value="cmpsci320">CMPSCI 320 - Software Engineering</option>
+    <option value="cmpsci326">CMPSCI 326 - Web Programming</option>
+    <option value="cmpsci345">CMPSCI 345 - Operating Systems</option>
+    <option value="cmpsci377">CMPSCI 377 - Operating Systems and System Programming</option>
+    <option value="cmpsci383">CMPSCI 383 - Artificial Intelligence</option>
+    <option value="cmpsci390D">CMPSCI 390D - Special Topics - Data Science</option>
+    <option value="cmpsci390M">CMPSCI 390M - Special Topics - Computer Science & Informatics: Machine Learning for Health</option>
+    <option value="cmpsci390S">CMPSCI 390S - Special Topics - Computer Science & Informatics: Scalable Distributed Systems</option>
+    <option value="cmpsci391L">CMPSCI 391L - Special Topics - Machine Learning</option>
+    <option value="cmpsci392F">CMPSCI 392F - Special Topics - Artificial Intelligence</option>
+    <option value="cmpsci393A">CMPSCI 393A - Special Topics - Computer Science & Informatics: Software Engineering in Practice</option>
+    <option value="cmpsci397A">CMPSCI 397A - Practicum - Advanced Data Science</option>
+    <option value="cmpsci397B">CMPSCI 397B - Practicum - Advanced Data Science: Machine Learning</option>
+    <option value="cmpsci397C">CMPSCI 397C - Practicum - Advanced Data Science: Deep Learning</option>
+    <option value="cmpsci397D">CMPSCI 397D - Practicum - Data Science</option>
+    <option value="cmpsci397E">CMPSCI 397E - Practicum - Exploratory Data Analysis</option>
+    <option value="cmpsci397F">CMPSCI 397F - Practicum - Introduction to Data Science</option>
+    <option value="cmpsci397G">CMPSCI 397G - Practicum - Data Mining</option>
+    <option value="cmpsci397H">CMPSCI 397H - Practicum - Advanced Data Science: Statistical Learning</option>
+    <option value="cmpsci397J">CMPSCI 397J - Practicum - Advanced Data Science: Bayesian Methods</option>
+    <option value="cmpsci397K">CMPSCI 397K - Practicum - Advanced Data Science: Computational Data Science</option>
+    <option value="cmpsci397L">CMPSCI 397L - Practicum - Advanced Data Science: Advanced Analytics</option>
+    <option value="cmpsci397M">CMPSCI 397M - Practicum - Advanced Data Science: Data Visualization</option>
+    <option value="cmpsci397N">CMPSCI 397N - Practicum - Advanced Data Science: Big Data</option>
+    <option value="cmpsci397O">CMPSCI 397O - Practicum - Advanced Data Science: Time Series Analysis</option>
+    <option value="cmpsci397P">CMPSCI 397P - Practicum - Advanced Data Science: Advanced Machine Learning</option>
+    <option value="cmpsci397Q">CMPSCI 397Q - Practicum - Advanced Data Science: Natural Language Processing</option>
+    <option value="cmpsci397R">CMPSCI 397R - Practicum - Advanced Data Science: Advanced Topics in Statistical Learning</option>
+    <option value="cmpsci397S">CMPSCI 397S - Practicum - Advanced Data Science: Text Mining</option>
+    <option value="cmpsci397T">CMPSCI 397T - Practicum - Advanced Data Science: Reinforcement Learning</option>
+    <optgroup label="400-Level Courses">
+    <option value="cmpsci403">CMPSCI 403 - Introduction to Robotics: Perception, Mechanics, Dynamics, and Control</option>
+<option value="cmpsci410">CMPSCI 410 - Compiler Techniques</option>
+<option value="cmpsci420">CMPSCI 420 - Software Entrepreneurship</option>
+<option value="cmpsci426">CMPSCI 426 - Scalable Web Systems</option>
+<option value="cmpsci429">CMPSCI 429 - Software Engineering Project Management</option>
+<option value="cmpsci445">CMPSCI 445 - Information Systems</option>
+<option value="cmpsci446">CMPSCI 446 - Search Engines</option>
+<option value="cmpsci453">CMPSCI 453 - Computer Networks</option>
+<option value="cmpsci461">CMPSCI 461 - Secure Distributed Systems</option>
+<option value="cmpsci466">CMPSCI 466 - Applied Cryptography</option>
+<option value="cmpsci474">CMPSCI 474 - Image Synthesis</option>
+<option value="cmpsci485">CMPSCI 485 - Applications of Natural Language Processing</option>
+<option value="cmpsci490Q">CMPSCI 490Q - Quantum Information Science</option>
+<option value="cmpsci490U">CMPSCI 490U - Introduction to User Experience Research</option>
+<option value="cmpsci491G">CMPSCI 491G - Seminar - Computer Networking Lab</option>
+<optgroup label="500-Level Courses">
+    <option value="cmpsci501">CMPSCI 501 - Formal Language Theory</option>
+<option value="cmpsci503">CMPSCI 503 - Embedded Computing Systems</option>
+<option value="cmpsci508">CMPSCI 508 - Ethical Considerations in Computing</option>
+<option value="cmpsci513">CMPSCI 513 - Logic in Computer Science</option>
+<option value="cmpsci514">CMPSCI 514 - Algorithms for Data Science</option>
+<option value="cmpsci515">CMPSCI 515 - Algorithms, Game Theory and Fairness</option>
+<option value="cmpsci520">CMPSCI 520 - Theory and Practice of Software Engineering</option>
+<option value="cmpsci524">CMPSCI 524 - Health Informatics and Data Science</option>
+<option value="cmpsci528">CMPSCI 528 - Mobile and Ubiquitous Computing</option>
+<option value="cmpsci532">CMPSCI 532 - Systems for Data Science</option>
+<option value="cmpsci535">CMPSCI 535 - Computer Architecture</option>
+<option value="cmpsci546">CMPSCI 546 - Applied Information Retrieval</option>
+<option value="cmpsci550">CMPSCI 550 - Introduction to Simulation</option>
+<option value="cmpsci560">CMPSCI 560 - Introduction to Computer and Network Security</option>
+<option value="cmpsci563">CMPSCI 563 - Internet Law and Policy</option>
+<option value="cmpsci564">CMPSCI 564 - Cyber Effects: Reverse Engineering, Exploit Analysis, and Capability Development</option>
+<option value="cmpsci565">CMPSCI 565 - Advanced Digital Forensic Systems</option>
+<option value="cmpsci571">CMPSCI 571 - Data Visualization and Exploration</option>
+<option value="cmpsci574">CMPSCI 574 - Intelligent Visual Computing</option>
+<option value="cmpsci575">CMPSCI 575 - Combinatorics and Graph Theory</option>
+<option value="cmpsci576">CMPSCI 576 - Game Programming</option>
+<option value="cmpsci578">CMPSCI 578 - Distributed Computing and Systems</option>
+<option value="cmpsci589">CMPSCI 589 - Machine Learning</option>
+<option value="cmpsci590L">CMPSCI 590L - Making Predications</option>
+<option value="cmpsci590Q">CMPSCI 590Q - Quantum Information Systems</option>
+<option value="cmpsci591CF">CMPSCI 591CF - Seminar - Cybersecurity Lecture Series</option>
+<option value="cmpsci591NR">CMPSCI 591NR - Seminar - Neural Networks: Neuroscience and Engineering</option>
+<optgroup label="600-Level Courses"></optgroup>
+<option value="cmpsci601">CMPSCI 601 - Computation Theory</option>
+<option value="cmpsci602">CMPSCI 602 - Research Methods in Empirical Computer Science</option>
+<option value="cmpsci603">CMPSCI 603 - Robotics</option>
+<option value="cmpsci610">CMPSCI 610 - Compiler Techniques</option>
+<option value="cmpsci611">CMPSCI 611 - Advanced Algorithms</option>
+<option value="cmpsci613">CMPSCI 613 - Advanced Logic in Computer Science</option>
+<option value="cmpsci614">CMPSCI 614 - Randomized Algorithms with Applications to Data Science</option>
+<option value="cmpsci621">CMPSCI 621 - Advanced Software Engineering: Analysis and Evaluation</option>
+<option value="cmpsci625">CMPSCI 625 - Advanced Methods in Human Computer Interaction</option>
+
+
+</select><br><br>
+<button type="submit">Submit</button>
+
+    <script>
+        document.getElementById("selectionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var university = document.getElementById("university").value;
+            var department = document.getElementById("department").value;
+            var selectedClass = document.getElementById("class").value;
+            
+            console.log("University: " + university);
+            console.log("Department: " + department);
+            console.log("Selected Class: " + selectedClass);
+            window.location.href = 'thank-you.html';
+        });
+    </script>
+</body>
+</html>
+
+<footer>
+    <p>Beyond A+ Tutoring Services</p>
+    <p>Contact us: info@beyonda+.edu</p>
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>
+

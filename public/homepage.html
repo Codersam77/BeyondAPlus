@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        main {
+    flex: 1; 
+}
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .tutoring-image {
+            text-align: center;
+            margin-top: auto; 
+        }
+
+        .tutoring-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 400px;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .tutoring-image img {
+            max-width: 100%; 
+            max-height: 300px; 
+            height: auto; 
+            display: block; 
+            margin: 20px auto; 
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        @media (min-width: 1200px) {
+            .hero {
+                padding: 50px 100px; 
+            }
+
+            .tutoring-image img {
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BeyondA+</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Get help when you need it from people who were in your shoes!</h2>
+            <p>Join us in our journey to innovate and reinvent the right way to learn.</p>
+            <button onclick="location.href='create-account.html'">Become a tutor</button>
+            <button onclick="location.href='create-account.html'">Become a student</button>
+        </section>
+        <section class="tutoring-image">
+            <img src="sam.jpg" alt="Inspiring Tutoring">
+        </section>
+    </main>
+    <footer style="margin-top: 50px;">
+        <p>BeyondA+ Tutoring Services</p>
+        <p>Contact us: info@beyonda+.edu</p>
+        <p>© 2024 BeyondA+. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.hero h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #fefcfc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    padding-bottom: 10px; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.tutoring-image img {
+    width: 100%; 
+    height: auto; 
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+.main_font_style {
+    font-family: Arial, sans-serif;
+    color: #007bff;
+    font-weight: bold; 
+}
+
+.main_h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 24px; 
+}
+
+
+.main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px #007bff; 
+    border-radius: 8px; 
+    max-width: 500px; 
+    margin: 40px auto; 
+    background-color: #fff; 
+}
+
+.main_h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #007bff; 
+    margin-bottom: 24px; 
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    font-family: Arial, sans-serif;
+    width: calc(100% - 40px); 
+    font-size: 18px; 
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block; 
+    border: 1px solid #d9d9d9; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s; 
+    outline: none; 
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff; 
+}
+
+select:hover {
+    border-color: #0056b3;
+}
+
+input[type="submit"] {
+    font-family: Arial, sans-serif;
+    font-size: 20px; 
+    background-color: #007bff;
+    color: white;
+    padding: 16px 32px;
+    margin: 24px 0; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.1s; 
+}
+
+input[type="submit"]:hover {
+    background-color: #007bff; 
+    transform: translateY(-2px); 
+}
+
+body {
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.tutor img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.tutor {
+    width: 30%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .tutor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tutor {
+        width: 80%;
+    }
+}
+.tutor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.thank-you-container img {
+    max-width: 80%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+}
